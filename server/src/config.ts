@@ -1,0 +1,4 @@
+export default {
+  PRODUCTS_PER_PAGE: 2,
+  NEW_PRODUCT_DAY_THRESHOLD: 30
+};
