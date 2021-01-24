@@ -1,9 +1,8 @@
 import React from "react";
-import "./index.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Routes } from "./config/routes";
 import IndexPageComponent from "./pages/IndexPage/components/IndexPageComponent";
-import ShopPageComponent from "./pages/ShopPage/components/ShopPageComponent";
+import ShopPageComponent from "./pages/ShopPage/ShopPageContainer";
 import ContactPageComponent from "./pages/ContactPage/components/ContactPageComponent";
 import HeaderComponent from "./shared/features/Header/components/HeaderComponent";
 

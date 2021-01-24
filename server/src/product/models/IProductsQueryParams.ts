@@ -1,6 +1,13 @@
+export type IProductsSortOption =
+  | 'price-acs'
+  | 'price-desc'
+  | 'created_at-desc';
+
+export type IProductsFilter = 'new' | 'sale';
+
 export interface IProductsQueryParams {
   page: number;
   categoryId?: number;
-  sort?: 'price-acs' | 'price-desc' | 'created_at-desc';
-  filter?: 'new' | 'sale';
+  sort?: IProductsSortOption;
+  filter?: IProductsFilter;
 }
