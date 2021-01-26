@@ -1,9 +1,9 @@
-import { IProduct } from "../../../../server/src/product/Product";
+import { IProduct } from '../../../../server/src/product/Product';
 import {
   IProductsSortOption,
-  IProductsFilter,
-} from "../../../../server/src/product/models/IProductsQueryParams";
-import { ProductsActionTypes, IProductsAction } from "./productsActions";
+  IProductsFilter
+} from '../../../../server/src/product/models/IProductsQueryParams';
+import { ProductsActionTypes, IProductsAction } from './productsActions';
 
 export interface IProductsState {
   products: IProduct[];
@@ -24,7 +24,7 @@ const initialState: IProductsState = {
   totalPages: 0,
   selectedCategoryId: null,
   selectedSortOption: null,
-  selectedFilter: null,
+  selectedFilter: null
 };
 
 export const productsReducer = (
@@ -35,7 +35,7 @@ export const productsReducer = (
     case ProductsActionTypes.FETCH_PRODUCTS:
       return {
         ...state,
-        loading: true,
+        loading: true
       };
     case ProductsActionTypes.FETCH_PRODUCTS_SUCCESS:
       return {
@@ -43,13 +43,13 @@ export const productsReducer = (
         products: [...state.products, ...action.payload.data],
         loading: false,
         pagesLoaded: state.pagesLoaded + 1,
-        totalPages: action.payload.totalPages,
+        totalPages: action.payload.totalPages
       };
     case ProductsActionTypes.FETCH_PRODUCTS_FAIL:
       return {
         ...state,
         loading: false,
-        loadingErrorMessage: action.payload,
+        loadingErrorMessage: action.payload
       };
     case ProductsActionTypes.SELECT_PRODUCT_CATEGORY:
       return {
@@ -59,7 +59,7 @@ export const productsReducer = (
         pagesLoaded: 0,
         totalPages: 0,
         selectedSortOption: null,
-        selectedFilter: null,
+        selectedFilter: null
       };
     case ProductsActionTypes.SELECT_PRODUCT_FILTER:
       return {
@@ -68,7 +68,7 @@ export const productsReducer = (
         products: [],
         pagesLoaded: 0,
         totalPages: 0,
-        selectedSortOption: null,
+        selectedSortOption: null
       };
     case ProductsActionTypes.SELECT_PRODUCT_SORT_ORDER:
       return {
@@ -76,7 +76,7 @@ export const productsReducer = (
         selectedSortOption: action.payload,
         products: [],
         pagesLoaded: 0,
-        totalPages: 0,
+        totalPages: 0
       };
     default:
       return state;

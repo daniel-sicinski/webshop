@@ -5,10 +5,10 @@ type IStringMap = {
 export type IActionUnion<A extends IStringMap> = ReturnType<A[keyof A]>;
 
 export const makeAction = <T>(type: T) => () => ({
-  type,
+  type
 });
 
 export const makeActionWithPayload = <T, P>(type: T) => (payload: P) => ({
   type,
-  payload,
+  payload
 });
