@@ -1,34 +1,30 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Routes } from "./config/routes";
-import IndexPageComponent from "./pages/IndexPage/components/IndexPageComponent";
-import ShopPageComponent from "./pages/ShopPage/ShopPageContainer";
-import ContactPageComponent from "./pages/ContactPage/components/ContactPageComponent";
-import HeaderComponent from "./shared/features/Header/components/HeaderComponent";
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Routes } from './config/routes';
+import IndexPageComponent from './pages/IndexPage/components/IndexPageComponent';
+import ContactPageComponent from './pages/ContactPage/components/ContactPageComponent';
+import { ShopPage } from './pages/ShopPage/ShopPage';
+import { AppNavbar } from './shared/components/AppNavbar/AppNavbar';
+import { AppFooter } from './shared/components/AppFooter/AppFooter';
 
-function App() {
+export const App: React.FunctionComponent = () => {
   return (
     <Router>
-      <HeaderComponent />
+      <AppNavbar />
       <Switch>
         <Route
           exact
           path={Routes.INDEX_PAGE}
           component={IndexPageComponent}
         ></Route>
-        <Route
-          exact
-          path={Routes.SHOP_PAGE}
-          component={ShopPageComponent}
-        ></Route>
+        <Route path={Routes.SHOP_PAGE} component={ShopPage}></Route>
         <Route
           exact
           path={Routes.CONTACT_PAGE}
           component={ContactPageComponent}
         ></Route>
       </Switch>
+      <AppFooter />
     </Router>
   );
-}
-
-export default App;
+};

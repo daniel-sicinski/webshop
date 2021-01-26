@@ -1,0 +1,2 @@
+export const PRODUCT_CATEGORY_ID_SKIRTS = 1;
+export const PRODUCT_CATEGORY_ID_TSHIRTS = 2;
