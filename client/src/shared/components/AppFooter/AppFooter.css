@@ -1,0 +1,5 @@
+.app-footer {
+  height: 30rem;
+  width: 100%;
+  background: var(--color-grey-light-2);
+}
