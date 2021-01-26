@@ -1,0 +1,28 @@
+.product-list-item {
+}
+
+.product-list-item__img-wrapper {
+}
+
+.product-list-item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.product-list-item__details {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-list-item__name {
+}
+
+.product-list-item__price {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
