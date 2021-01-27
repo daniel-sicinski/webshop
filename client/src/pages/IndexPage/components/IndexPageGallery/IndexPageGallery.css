@@ -1,0 +1,30 @@
+.index-page-gallery {
+  width: 100%;
+  margin-top: 10rem;
+  height: 75rem;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.index-page-gallery img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.index-page-gallery__prev-btn,
+.index-page-gallery__next-btn {
+  width: 5rem;
+  height: 5rem;
+  transform: translateY(-50%);
+  top: 50%;
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  background-color: white;
+  padding: 1rem;
+}
+
+.index-page-gallery__next-btn {
+  right: 0;
+}
