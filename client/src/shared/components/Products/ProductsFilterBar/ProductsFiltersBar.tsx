@@ -1,5 +1,5 @@
 import React from 'react';
 
 export const ProductsFilterBar: React.FunctionComponent = ({ children }) => {
-  return <div className="categories-bar">{children}</div>;
+  return <div className="products-filter-bar">{children}</div>;
 };

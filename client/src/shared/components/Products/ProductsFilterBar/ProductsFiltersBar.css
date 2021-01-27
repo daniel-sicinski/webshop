@@ -1,8 +1,8 @@
-.categories-bar {
+.products-filter-bar {
   display: flex;
 }
 
-.categories-bar button {
+.products-filter-bar button {
   background-color: transparent;
   border: none;
   padding: 1rem 2rem;
@@ -16,6 +16,6 @@
   transition: all 0.2s;
 }
 
-.categories-bar button:hover {
+.products-filter-bar button:hover {
   border-bottom: 2px solid var(--color-grey-dark-3);
 }

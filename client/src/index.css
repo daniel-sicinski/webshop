@@ -4,6 +4,7 @@
 
 @import './pages/ShopPage/components/ShopHeader/ShopHeader.css';
 @import './pages/ShopPage/ShopPage.css';
+@import './pages/IndexPage/IndexPage.css';
 @import './pages/IndexPage/components/IndexPageGallery/IndexPageGallery.css';
 @import './shared/components/AppNavbar/AppNavbar.css';
 @import './shared/components/AppFooter/AppFooter.css';
