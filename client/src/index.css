@@ -9,6 +9,7 @@
 @import './pages/IndexPage/components/IndexPageGallery/IndexPageGallery.css';
 @import './shared/components/AppNavbar/AppNavbar.css';
 @import './shared/components/AppFooter/AppFooter.css';
+@import './shared/components/Button/Button.css';
 @import './shared/components/Products/ProductsFilterBar/ProductsFiltersBar.css';
 @import './shared/components/Products/ProductListItem/ProductListItem.css';
 @import './shared/components/Products/ProductsList/ProductsList.css';
