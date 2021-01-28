@@ -6,10 +6,6 @@
   background-color: transparent;
   border: none;
   padding: 1rem 2rem;
-  color: var(--color-grey-dark-3);
-  font-weight: 600;
-  font-size: 1.6rem;
-  text-transform: uppercase;
   cursor: pointer;
   outline: none;
   border-bottom: 2px solid transparent;

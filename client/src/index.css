@@ -1,6 +1,7 @@
 @import './globalStyles/variables.css';
 @import './globalStyles/base.css';
 @import './globalStyles/typography.css';
+@import './globalStyles/utils.css';
 
 @import './pages/ShopPage/components/ShopHeader/ShopHeader.css';
 @import './pages/ShopPage/ShopPage.css';

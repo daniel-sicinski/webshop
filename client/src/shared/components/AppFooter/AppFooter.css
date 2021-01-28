@@ -1,5 +1,38 @@
-.app-footer {
-  height: 30rem;
-  width: 100%;
-  background: var(--color-grey-light-2);
+.app-footer__site-info {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.app-footer__site-info h5 {
+  margin-bottom: 2rem;
+}
+
+.app-footer__divider {
+  height: 1px;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+  width: 96%;
+  margin: 8rem auto 5rem;
+  background-color: var(--color-grey-light-2);
+}
+
+.app-footer__links {
+  list-style: none;
+}
+
+.app-footer__links li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.app-footer__contact address {
+  font-style: normal;
+}
+
+.app-footer__copyright {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
 }

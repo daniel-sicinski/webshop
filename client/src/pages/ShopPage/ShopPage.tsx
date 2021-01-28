@@ -26,8 +26,14 @@ export const ShopPage: React.FunctionComponent = () => {
 
   const shopPageFilters = (
     <Fragment>
-      <button onClick={() => dispatch(selectProductCategory(null))}>All</button>
       <button
+        className="label"
+        onClick={() => dispatch(selectProductCategory(null))}
+      >
+        All
+      </button>
+      <button
+        className="label"
         onClick={() =>
           dispatch(selectProductCategory(PRODUCT_CATEGORY_ID_SKIRTS))
         }
@@ -35,6 +41,7 @@ export const ShopPage: React.FunctionComponent = () => {
         Skirts
       </button>
       <button
+        className="label"
         onClick={() =>
           dispatch(selectProductCategory(PRODUCT_CATEGORY_ID_TSHIRTS))
         }
@@ -46,11 +53,22 @@ export const ShopPage: React.FunctionComponent = () => {
 
   const shopCategoryPageFilters = (
     <Fragment>
-      <button onClick={() => dispatch(selectProductFilter(null))}>All</button>
-      <button onClick={() => dispatch(selectProductFilter('sale'))}>
+      <button
+        className="label"
+        onClick={() => dispatch(selectProductFilter(null))}
+      >
+        All
+      </button>
+      <button
+        className="label"
+        onClick={() => dispatch(selectProductFilter('sale'))}
+      >
         On sale
       </button>
-      <button onClick={() => dispatch(selectProductFilter('new'))}>
+      <button
+        className="label"
+        onClick={() => dispatch(selectProductFilter('new'))}
+      >
         New releases
       </button>
     </Fragment>

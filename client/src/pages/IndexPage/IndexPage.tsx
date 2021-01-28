@@ -6,27 +6,33 @@ import { IndexPageGallery } from './components/IndexPageGallery/IndexPageGallery
 import { selectProductFilter } from '../../store/products/productsActions';
 
 export const IndexPage: React.FunctionComponent = () => {
-    const dispatch = useDispatch();
-    
-    useEffect(() => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
     dispatch(selectProductFilter('sale'));
   }, []);
-    
+
   return (
     <Fragment>
       <IndexPageGallery />
       <section className="index-page__products">
-        <div className="index-page__controls">      
-      <ProductsFilterBar>
-        <button onClick={() => dispatch(selectProductFilter('sale'))}>
-        On sale
-      </button>
-      <button onClick={() => dispatch(selectProductFilter('new'))}>
-        New releases
-      </button>
-      </ProductsFilterBar>
+        <div className="index-page__controls">
+          <ProductsFilterBar>
+            <button
+              className="label"
+              onClick={() => dispatch(selectProductFilter('sale'))}
+            >
+              On sale
+            </button>
+            <button
+              className="label"
+              onClick={() => dispatch(selectProductFilter('new'))}
+            >
+              New releases
+            </button>
+          </ProductsFilterBar>
         </div>
-      <ProductsList />
+        <ProductsList />
       </section>
     </Fragment>
   );
